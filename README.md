@@ -261,7 +261,7 @@ String S= jTextField_display.getText();
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         String S= jTextField_display.getText();
-        jTextField_display.setText(S+"0");   
+           jTextField_display.setText(S+"0");   
     }                                         
 
     private void jTextField_displayActionPerformed(java.awt.event.ActionEvent evt) {                                                   
@@ -334,22 +334,22 @@ num1=Double.parseDouble(jTextField_display.getText());
         {
             case    "+":
                 res=num1+num2;
-                    ans=String.format("%.of",res);
+                    ans=String.format("%.0f",res);
                     jTextField_display.setText(ans);
                     break;
             case    "-":
                 res=num1-num2;
-                    ans=String.format("%.of",res);
+                    ans=String.format("%.0f",res);
                     jTextField_display.setText(ans);
                     break;
-            case    "x":
+            case    "*":
                 res=num1*num2;
-                    ans=String.format("%.of",res);
+                    ans=String.format("%.0f",res);
                     jTextField_display.setText(ans);
                     break; 
             case    "/":
                 res=num1/num2;
-                    ans=String.format("%.of",res);
+                    ans=String.format("%.0f",res);
                     jTextField_display.setText(ans);
                     break;
         }
